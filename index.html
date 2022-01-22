@@ -58,7 +58,7 @@
         <section class="hero-bg">
             <div class="container hero">
                 <h1 class="hero"><span class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ</span><br /><span class="hero-text">ДЛЯ ВАШЕГО БИЗНЕСА</span></h1>
-                <button type="button" class="button" data-modal-open><span class="hero-text btn-text">Заказать услугу</span></button>
+                <button type="button" class="button" data-modal-open><span class="btn-text">Заказать услугу</span></button>
             </div>
         </section>
 
@@ -414,10 +414,22 @@
                             <svg class="icon-nw" width="20px" height="20px">
                                 <use href="./images/icons.svg#linkedin"></use>
                             </svg>
-                        </a>
-                
+                        </a>                
                     </li>
                 </ul>
+            </div>
+            <div class="container-footer-subscribe">
+                <form action="#" class="subscribe"> 
+                    <label for="footer-subscribe" class="footer-online">Подпишитесь на рассылку</label>
+                    <div class="subscribe-online">
+                    <input type="email" name="email-subscribe" id="footer-subscribe" class="subscribe-input" placeholder="E-mail" required>
+                    <button type="submit" class="button-footer"><span class="btn-subscribe">Подписаться
+                        <svg class="icon-send" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </span></button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>
@@ -430,7 +442,7 @@
             <form action="#" class="form-online">
                 <div class="input-name">
                 <label for="user-name" class="input-wrap">Имя</label>
-                <input type="text" class="form-input" name="online-name" id="user-name" required>
+                <input type="text" class="form-input" name="user-name" id="user-name" required>
                 <svg class="icon-black" width="18px" height="18px">
                     <use href="./images/icons.svg#person-black"></use>
                 </svg>
@@ -438,7 +450,7 @@
 
                 <div class="input-tel">
                 <label for="user-tel" class="input-wrap">Телефон</label>
-                <input type="tel" class="form-input" name="online-tel" id="user-tel" required>
+                <input type="tel" class="form-input" name="user-tel" id="user-tel" required>
                 <svg class="icon-black" width="18px" height="18px">
                     <use href="./images/icons.svg#phone-black"></use>
                 </svg>
@@ -446,7 +458,7 @@
 
                 <div class="input-email">
                 <label for="user-email" class="input-wrap">Почта</label>
-                <input type="email" class="form-input" name="online-email" id="user-email">
+                <input type="email" class="form-input" name="user-email" id="user-email">
                 <svg class="icon-black" width="18px" height="18px">
                     <use href="./images/icons.svg#email-black"></use>
                 </svg>
@@ -454,9 +466,15 @@
                 <label for="comment" class="input-wrap">Комментарий</label>
                 <textarea name="comment" class="comment-text" id="comment" placeholder="Введите текст"></textarea>
                 <div class="check-online">
-                <input type="checkbox" id="check">
-                <label for="check" class="check-b">Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement">Условия договора</a> </label>
+                <input type="checkbox" name="check" id="check" class="input-check visually-hidden" required>
+                <label for="check" class="check-b">
+                    <span>
+                    <svg class="check-on" width="16px" height="15px">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                </span>Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement" target="_blank">Условия договора</a> </label>
                 </div>
+                <button type="submit" class="button"><span class="btn-text">Отправить</span></button>
             </form>
            
         </div>
