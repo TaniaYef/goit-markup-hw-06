@@ -882,6 +882,7 @@ li:focus .img-product::before {
   margin-left: 7px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .check-online {
